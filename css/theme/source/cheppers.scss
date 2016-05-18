@@ -1,0 +1,189 @@
+// Colors
+$cheppers-blue: #4DC8F8;
+$font-blue: #1793D2;
+
+// Settings
+$default-height: 800px;
+$default-width: 1060px;
+
+.reveal {
+	.slides,
+	.section,
+	.present {}
+}
+
+.slides {
+	h1, h2, h3, h4, h5, h6 {
+		text-transform: uppercase;
+		text-align: left;
+		font-weight: bold;
+		font-family: Helvetica;
+	}
+
+	h1 {
+		font-size: 8.5em;
+	}	
+
+	h2 {
+		font-size: 6.5em;
+	}
+	h3 {
+		font-size: 4.5em;
+		margin: 10px 0;
+	}
+
+	h4 {
+		font-size: 3.5em;
+	}
+
+	h5 {
+		font-size: 2.5em;
+	}
+
+	h6 {
+		font-size: 1.5em;
+	}
+
+
+	.top {
+		top: 0 !important;
+	}
+
+	.inline {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.circle {
+		vertical-align: top;
+	}
+
+	.lowercase {
+		text-transform: lowercase;
+	}
+
+	.full-height {
+		height: 100%;
+	}
+
+	.vertical-middle {
+		height: $default-height;
+		vertical-align: middle;
+	}
+
+	.list-header {
+		text-align: left;
+		margin-bottom: 30px;
+	}
+
+	.header {
+		margin-bottom: 150px;
+	}
+
+	.upgrade-options {
+
+	}
+
+	ul {
+		li {
+			text-align: left;
+			margin-bottom: 25px;
+			padding: 10px 0;
+			line-height: 25px;
+			list-style: none;
+
+			&:before {
+				content: "";
+				width: 30px;
+				height: 30px;
+				position: absolute;
+			}
+
+			h1, h2, h3, h4, h5, span {
+				padding-left: 30px;
+			}
+
+			span {
+				font-size: 24px;
+			}
+		}
+	}
+
+	.white {
+		ul {
+			li {
+				
+				color: grey;
+
+				&:before {
+					background: url('images/list-rectangle.png') no-repeat;
+				}
+
+			}
+		}	
+	}
+
+	.blue {
+		ul {
+			li {
+				color: $font-blue;
+
+				&:before {
+					background: url('images/list-rectangle-white.png') no-repeat;
+				}
+			}
+		}	
+	}
+	
+}
+
+body {
+	.backgrounds .blue {
+		background: url('images/lines_blue.png') no-repeat $cheppers-blue;
+	} 
+
+	.backgrounds .white {
+		background: url('images/lines_white.png') no-repeat white;
+	} 
+	
+	.blue .content-wrapper {
+		height: 100%;
+	}
+
+	section.blue {
+		color: white;
+	}
+
+	section.white {
+		color: $font-blue;
+	}
+	section.d6-usage {
+		color: $font-blue;
+	}
+}
+
+.reveal {
+
+	.fifty {
+		width: 49%;
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+	.thirty {
+		height: 100%;
+		vertical-align: top;
+		width: 30%;
+		top: 0;
+		bottom: 0;
+		display: inline-block;
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+
+	.seventy {
+		width: 69%;
+		display: inline-block;
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+}

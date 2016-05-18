@@ -1,0 +1,116 @@
+.slides h1, .slides h2, .slides h3, .slides h4, .slides h5, .slides h6 {
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: bold;
+  font-family: Helvetica; }
+
+.slides h1 {
+  font-size: 8.5em; }
+
+.slides h2 {
+  font-size: 6.5em; }
+
+.slides h3 {
+  font-size: 4.5em;
+  margin: 10px 0; }
+
+.slides h4 {
+  font-size: 3.5em; }
+
+.slides h5 {
+  font-size: 2.5em; }
+
+.slides h6 {
+  font-size: 1.5em; }
+
+.slides .top {
+  top: 0 !important; }
+
+.slides .inline {
+  display: inline-block;
+  vertical-align: top; }
+
+.slides .circle {
+  vertical-align: top; }
+
+.slides .lowercase {
+  text-transform: lowercase; }
+
+.slides .full-height {
+  height: 100%; }
+
+.slides .vertical-middle {
+  height: 800px;
+  vertical-align: middle; }
+
+.slides .list-header {
+  text-align: left;
+  margin-bottom: 30px; }
+
+.slides .header {
+  margin-bottom: 150px; }
+
+.slides ul li {
+  text-align: left;
+  margin-bottom: 25px;
+  padding: 10px 0;
+  line-height: 25px;
+  list-style: none; }
+  .slides ul li:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute; }
+  .slides ul li h1, .slides ul li h2, .slides ul li h3, .slides ul li h4, .slides ul li h5, .slides ul li span {
+    padding-left: 30px; }
+  .slides ul li span {
+    font-size: 24px; }
+
+.slides .white ul li {
+  color: grey; }
+  .slides .white ul li:before {
+    background: url("images/list-rectangle.png") no-repeat; }
+
+.slides .blue ul li {
+  color: #1793D2; }
+  .slides .blue ul li:before {
+    background: url("images/list-rectangle-white.png") no-repeat; }
+
+body .backgrounds .blue {
+  background: url("images/lines_blue.png") no-repeat #4DC8F8; }
+
+body .backgrounds .white {
+  background: url("images/lines_white.png") no-repeat white; }
+
+body .blue .content-wrapper {
+  height: 100%; }
+
+body section.blue {
+  color: white; }
+
+body section.white {
+  color: #1793D2; }
+
+body section.d6-usage {
+  color: #1793D2; }
+
+.reveal .fifty {
+  width: 49%;
+  padding: 0 10px;
+  box-sizing: border-box; }
+
+.reveal .thirty {
+  height: 100%;
+  vertical-align: top;
+  width: 30%;
+  top: 0;
+  bottom: 0;
+  display: inline-block;
+  padding: 0 10px;
+  box-sizing: border-box; }
+
+.reveal .seventy {
+  width: 69%;
+  display: inline-block;
+  padding: 0 10px;
+  box-sizing: border-box; }

@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/cheppers.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class="blue center">
+					<h2>A honlapom még drupal 6:</h2> 
+					<h2> Mit tudok tenni?</h2>
+				</section>
+				<section class="white center">
+					<span class="circle">
+						<img src="./css/theme/images/code-snippet.png" />
+					</span> 
+					<div class="inline">
+						<h3>Segesvári Dávid (segi)</h3>
+						<h3>Cheppers</h3>
+						<h3 class="lowercase">@segi67</h3>
+					</div>
+				</section>
+				<section class="blue">
+					<div class="inline fifty">
+						<h2>Dupal 6 RIP!</h2>
+						<h3>(2008 - 2016)</h3>
+					</div>
+					<div class="inline fifty">
+						<img src="./html-images/dries.jpg">
+					</div>
+				</section>
+				<section class="white d6-usage center">
+					<div class="thirty">
+						<h3> Drupal 6 honlapok száma</h3>
+					</div>
+					<div class="seventy"> 
+						<img src="./html-images/drupal_6.png" />
+					</div>
+				</section>
+				<section class="blue center">
+					<h2 class="lowercase"> OK, de a honlapom még Drupal 6 alatt fut! </h2>
+				</section>
+				<section class="white top pro-con-drupal7">
+					<h3 class="header"> Drupal 7 </h3>
+					<div class="fifty inline">
+						<h6 class="list-header">Előnyök</h6>
+						<ul>
+							<li><span>Sokféle modul elérhető</span> </li>
+							<li><span>Stabil</span></li>
+							<li><span>Kisebb a változás Drupal 6 és 7 között</span></li>
+						</ul>
+					</div>
+					<div class="fifty inline">
+						<h6 class="list-header">Hátrányok</h6>
+						<ul>
+							<li><span>A reszponzív sminkek nem támogatja a core</span> </li>
+							<li><span>Beállítások a konfigurációs fájlokban</span></li>
+							<li><span>Hosszabb támogatotság</span></li>
+							<li><span>Új funkciók nem lesznek elérhetőek a frissítésekkel</span></li>
+						</ul>
+					</div>
+				</section>
+				<section class="white pro-con-drupal8">
+					<h3 class="header"> Drupal 8 </h3>
+					<div class="fifty inline">
+						<h6 class="list-header">Előnyök</h6>
+						<ul>
+							<li><span>Teljesítmény növekekés(PHP 7 kopatibilitás, HipHop php)</span> </li>
+							<li><span>Újabb funciók ékeznek a frissítésekkel</span></li>
+							<li><span>Hosszabb támogatotság</span></li>
+							<li><span>Reszponzív sminkek</span></li>
+						</ul>
+					</div>
+					<div class="fifty inline">
+						<h6 class="list-header">Hátrányok</h6>
+						<ul>
+							<li><span>Sok Drupal 7-es module még nem elérhető vagy nem stabil</span> </li>
+							<li><span>Kevesebb leírás és szaktudás</span></li>
+							<li><span>API szinten nagyobb változás, ezáltal többet kell tanulni</span></li>
+						</ul>
+					</div>
+				</section>
+				<section class="white">
+					<h2 class="header"> Top modulok </h2>
+					<ul>
+						<li>1. Views - Drupal 8 része</li>
+						<li>2. Ctools - Drupal 8 része</li>
+						<li>3. Token  - <span class="color-green">8.x-1.0-alpha2<span></li>
+						<li>4. Pathauto - <span class="color-green">8.x-1.0-alpha3<span></li>
+						<li>5. Libraries API - <span class="color-green">Nem elérhető</span></li>
+						<li>9. jQuery Update - Drupal 8 része</li>
+						<li>14. Google Analytics - <span class="color-green">8.x-2.0</span></li>
+						<li>15. Wysiwyg - Drupal 8 része</li>
+						<li>19. Metatag	- <span class="color-green">8.x-1.0-beta8</span></li>
+						<li>21. Rules - <spam class="color-green">8.x-3.0-alpha1</spam></li>
+						<li>23. Views Slideshow - <span class="color-green">8.x-4.0</span></li>
+					</ul>
+				</section>
+				<section class="blue upgrade-options">
+					<h3 class="header">Milyen lehetőségeim vannak?</h3>
+					<ul>
+						<li><h5>Upgrade path</h5></li>
+						<li><h5>Migráció Drupal 6-ről 7-re</h5></li>
+						<li><h5>Migráció Drupal 6-ról 8-ra</h5></li>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
