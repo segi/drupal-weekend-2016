@@ -2,7 +2,11 @@
   text-transform: uppercase;
   text-align: left;
   font-weight: bold;
-  font-family: Helvetica; }
+  font-family: Helvetica;
+  margin-bottom: 25px; }
+
+.slides h1, .slides h2, .slides h3 {
+  line-height: 1.15em; }
 
 .slides h1 {
   font-size: 8.5em; }
@@ -22,6 +26,13 @@
 
 .slides h6 {
   font-size: 1.5em; }
+
+.slides .table {
+  display: table; }
+  .slides .table > div {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px; }
 
 .slides .top {
   top: 0 !important; }
@@ -50,9 +61,23 @@
 .slides .header {
   margin-bottom: 150px; }
 
+.slides .sub-header {
+  margin: 20px 0px; }
+
+.slides .upgrade-options ul li {
+  margin: 15px 0; }
+
+.slides .module-list .table {
+  width: 100%; }
+  .slides .module-list .table div {
+    width: 45%; }
+
+.slides .module-list .color-green {
+  color: green;
+  padding-left: 0; }
+
 .slides ul li {
   text-align: left;
-  margin-bottom: 25px;
   padding: 10px 0;
   line-height: 25px;
   list-style: none; }
@@ -61,10 +86,10 @@
     width: 30px;
     height: 30px;
     position: absolute; }
-  .slides ul li h1, .slides ul li h2, .slides ul li h3, .slides ul li h4, .slides ul li h5, .slides ul li span {
+  .slides ul li h1, .slides ul li h2, .slides ul li h3, .slides ul li h4, .slides ul li h5, .slides ul li span, .slides ul li p {
     padding-left: 30px; }
-  .slides ul li span {
-    font-size: 24px; }
+  .slides ul li span, .slides ul li p {
+    font-size: 28px; }
 
 .slides .white ul li {
   color: grey; }

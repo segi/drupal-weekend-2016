@@ -18,6 +18,12 @@ $default-width: 1060px;
 		text-align: left;
 		font-weight: bold;
 		font-family: Helvetica;
+		margin-bottom: 25px;
+		
+	}
+
+	h1, h2, h3 {
+		line-height: 1.15em;
 	}
 
 	h1 {
@@ -44,6 +50,16 @@ $default-width: 1060px;
 		font-size: 1.5em;
 	}
 
+
+	.table {
+		display: table;
+
+		& > div {
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 10px;
+		}
+	}
 
 	.top {
 		top: 0 !important;
@@ -80,14 +96,35 @@ $default-width: 1060px;
 		margin-bottom: 150px;
 	}
 
-	.upgrade-options {
+	.sub-header {
+		margin: 20px 0px;
+	}
 
+	.upgrade-options {
+		ul {
+			li {
+				margin: 15px 0;
+			}
+		}
+
+	}
+
+	.module-list {
+		.table {
+			width: 100%;
+			div {
+				width: 45%;
+			}
+		}
+		.color-green {
+			color: green;
+			padding-left: 0;
+		}
 	}
 
 	ul {
 		li {
 			text-align: left;
-			margin-bottom: 25px;
 			padding: 10px 0;
 			line-height: 25px;
 			list-style: none;
@@ -99,12 +136,12 @@ $default-width: 1060px;
 				position: absolute;
 			}
 
-			h1, h2, h3, h4, h5, span {
+			h1, h2, h3, h4, h5, span, p {
 				padding-left: 30px;
 			}
 
-			span {
-				font-size: 24px;
+			span, p {
+				font-size: 28px;
 			}
 		}
 	}
@@ -112,7 +149,6 @@ $default-width: 1060px;
 	.white {
 		ul {
 			li {
-				
 				color: grey;
 
 				&:before {
