@@ -50,10 +50,6 @@
 .slides .full-height {
   height: 100%; }
 
-.slides .vertical-middle {
-  height: 800px;
-  vertical-align: middle; }
-
 .slides .list-header {
   text-align: left;
   margin-bottom: 30px; }
@@ -61,11 +57,16 @@
 .slides .header {
   margin-bottom: 150px; }
 
-.slides .sub-header {
-  margin: 20px 0px; }
-
 .slides .upgrade-options ul li {
   margin: 15px 0; }
+
+.slides .question-link {
+  margin-top: 25px; }
+  .slides .question-link a {
+    text-decoration: none;
+    color: black;
+    background: #4DC8F8;
+    padding: 5px; }
 
 .slides .module-list .table {
   width: 100%; }
@@ -75,6 +76,21 @@
 .slides .module-list .color-green {
   color: green;
   padding-left: 0; }
+
+.slides .module-list .color-red {
+  color: red;
+  padding-left: 0; }
+
+.slides .decision .highlight {
+  background: white;
+  padding: 10px;
+  color: #4DC8F8; }
+
+.slides .migration .header {
+  margin-bottom: 100px; }
+
+.slides .migration .sub-header {
+  margin: 30px 0px; }
 
 .slides ul li {
   text-align: left;
@@ -89,7 +105,8 @@
   .slides ul li h1, .slides ul li h2, .slides ul li h3, .slides ul li h4, .slides ul li h5, .slides ul li span, .slides ul li p {
     padding-left: 30px; }
   .slides ul li span, .slides ul li p {
-    font-size: 28px; }
+    font-size: 35px;
+    line-height: 25px; }
 
 .slides .white ul li {
   color: grey; }
@@ -100,6 +117,10 @@
   color: #1793D2; }
   .slides .blue ul li:before {
     background: url("images/list-rectangle-white.png") no-repeat; }
+
+body .backgrounds .open-slide {
+  background: url("images/drupal_weekend_slide.png") no-repeat;
+  background-size: cover; }
 
 body .backgrounds .blue {
   background: url("images/lines_blue.png") no-repeat #4DC8F8; }

@@ -2,10 +2,6 @@
 $cheppers-blue: #4DC8F8;
 $font-blue: #1793D2;
 
-// Settings
-$default-height: 800px;
-$default-width: 1060px;
-
 .reveal {
 	.slides,
 	.section,
@@ -50,7 +46,6 @@ $default-width: 1060px;
 		font-size: 1.5em;
 	}
 
-
 	.table {
 		display: table;
 
@@ -82,11 +77,6 @@ $default-width: 1060px;
 		height: 100%;
 	}
 
-	.vertical-middle {
-		height: $default-height;
-		vertical-align: middle;
-	}
-
 	.list-header {
 		text-align: left;
 		margin-bottom: 30px;
@@ -96,17 +86,22 @@ $default-width: 1060px;
 		margin-bottom: 150px;
 	}
 
-	.sub-header {
-		margin: 20px 0px;
-	}
-
 	.upgrade-options {
 		ul {
 			li {
 				margin: 15px 0;
 			}
 		}
+	}
 
+	.question-link {
+		margin-top: 25px;
+		a {
+			text-decoration: none;
+			color: black;
+			background: $cheppers-blue;
+			padding: 5px;
+		}
 	}
 
 	.module-list {
@@ -119,6 +114,29 @@ $default-width: 1060px;
 		.color-green {
 			color: green;
 			padding-left: 0;
+		}
+
+		.color-red {
+			color: red;
+			padding-left: 0;
+		}
+	}
+
+	.decision {
+		.highlight {
+			background: white;
+			padding: 10px;
+			color: $cheppers-blue;
+		}
+	}
+
+	.migration {
+		.header {
+			margin-bottom: 100px;
+		}
+
+		.sub-header {
+			margin: 30px 0px;
 		}
 	}
 
@@ -141,7 +159,8 @@ $default-width: 1060px;
 			}
 
 			span, p {
-				font-size: 28px;
+				font-size: 35px;
+				line-height: 25px;
 			}
 		}
 	}
@@ -174,6 +193,11 @@ $default-width: 1060px;
 }
 
 body {
+	.backgrounds .open-slide {
+		background: url('images/drupal_weekend_slide.png') no-repeat;
+		background-size:cover
+	}
+
 	.backgrounds .blue {
 		background: url('images/lines_blue.png') no-repeat $cheppers-blue;
 	} 
